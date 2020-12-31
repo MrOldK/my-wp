@@ -92,7 +92,7 @@ class Compiler {
                 var exports = {}
                 (function (require, exports, code) {
                     eval(code)
-                }(localRequire, exports, graph[module].code)
+                }(localRequire, exports, graph[module].code))
                 return exports
             }
             require('${this.entry}')
