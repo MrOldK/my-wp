@@ -83,7 +83,7 @@ class Compiler {
     generate (code) {
         // 输出文件路径
         const filepath = path.join(this.output.path, this.output.filename)
-        // 懵逼了吗？没事，下一节我们捋一捋
+        // 这一步太难了
         const bundle = `(function (graph) {
             function require (module) {
                 function localRequire(relativePath) {
